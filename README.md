@@ -1,79 +1,64 @@
-# !!!! Under Construction !!!!
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
-</div>
+# Hi, I'm Coxless
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30&height=150&section=header&animation=twinkling" />
-</div>
+Developer based in Tokyo, Japan. I mostly write **Rust**, **TypeScript** and **Python**, and I like building small, sharp tools: command-line utilities, numerical code, and things that run AI models locally instead of in someone else's cloud.
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=A9FEF7&center=true&vCenter=true&width=600&lines=Hey+there!+I'm+User+%F0%9F%91%8B;Flutter+Developer+%F0%9F%9A%80;Mobile+App+Enthusiast+%E2%9C%A8;Always+Learning+New+Things+%F0%9F%93%9A" alt="Typing SVG" />
-</div>
+Several of my projects are named after rowing — a *coxless* boat has no coxswain, a *thole* is the pin an oar pivots on, and a *hull* is what keeps it all afloat.
 
-## 🌟 **About Me**
+## What I'm working on
 
-<div align="center">
+- **[thole](https://github.com/Coxless/thole)** — Scientific computing crates in pure Rust, with no BLAS or LAPACK underneath. Every algorithm is written from scratch, callable from Python, and has its mathematical properties proved in Lean 4. Early development.
+- **[hull](https://github.com/Coxless/hull)** — A chat-history-style terminal: each command and its output is a block, and past sessions can be listed and resumed. Design stage.
+- **[local-decision-model](https://github.com/Coxless/local-decision-model)** — A small encoder model that answers named questions about free text with typed, calibrated probabilities, exported to OpenVINO to run on an Intel NPU.
 
-<table>
-<tr>
-<td width="200" align="center">
-<img src="https://skillicons.dev/icons?i=flutter" width="100" height="100" alt="Flutter" />
-<br><strong>Flutter</strong>
-</td>
-<td width="400" align="left">
+## Projects
 
-### 👋 **Hi, I'm Coxless!**
-🚀 **Flutter Developer** passionate about mobile development  
+### Command-line tools
 
-🌍 **Location:** Japan 🇯🇵  
-💼 **Focus:** Building beautiful mobile applications  
-☕ **Powered by:** Coffee and curiosity  
-🎯 **Goal:** Creating amazing user experiences  
+| Project | What it does | Language |
+|---|---|---|
+| [execenv](https://github.com/Coxless/execenv) | Decrypts a SOPS-encrypted config in memory and hands off to your command via `execve`, so secrets never touch disk | Rust |
+| [tiny-ai-shell](https://github.com/Coxless/tiny-ai-shell) | `ta "..."` turns natural language into a shell command using a local LLM (Ollama) | Rust |
+| [vsgrep](https://github.com/Coxless/vsgrep) | A ripgrep-like local semantic (vector) search CLI. Work in progress | Rust |
+| [github-notifier-ws](https://github.com/Coxless/github-notifier-ws) | Windows tray utility that filters GitHub notifications with YAML rules and shows only the ones that matter as toasts | Rust |
 
-</td>
-</tr>
-</table>
+### Science and numerics
 
-</div>
+| Project | What it does | Language |
+|---|---|---|
+| [thole](https://github.com/Coxless/thole) | Pure-Rust scientific computing with Python bindings and Lean 4 proofs | Rust, Lean, Python |
+| [fits-viewer](https://github.com/Coxless/fits-viewer) | Fast, lightweight FITS file viewer with GPU rendering, built for GB-to-TB astronomy data | Rust |
+| [lbm-analysis](https://github.com/Coxless/lbm-analysis) | Lattice Boltzmann solver for 2D axisymmetric A–V electromagnetic problems, validated against exact Bessel-function solutions | Python, Jupyter |
 
-## 📊 **GitHub Analytics**
+### AI and agents
 
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=user&theme=transparent&border_radius=10&starting_year=2020" alt="readme streak stats" />
-</div>
+| Project | What it does | Language |
+|---|---|---|
+| [agent-auth-demo](https://github.com/Coxless/agent-auth-demo) | Hands-on demo of an in-browser LLM agent (WebLLM) calling an MCP server protected by OAuth 2.1 / PKCE, with Cedar policies for authorization | TypeScript |
+| [local-decision-model](https://github.com/Coxless/local-decision-model) | Typed, calibrated answers from a small model running on an NPU | Python |
+| [cc-terminal-mod](https://github.com/Coxless/cc-terminal-mod) | A Claude Code mod that opens a terminal pane in place and passes only the text you select to Claude | TypeScript |
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=user&custom_title=User's%20GitHub%20Activity%20Graph&bg_color=0d1117&color=58a6ff&line=58a6ff&point=58a6ff&area=true&hide_border=true" />
-</div>
+### Web and JavaScript tooling
 
-## 🛠️ **Tech Stack**
+| Project | What it does | Language |
+|---|---|---|
+| [vite-plugin-wasm-hmr](https://github.com/Coxless/vite-plugin-wasm-hmr) | Vite plugin that watches Rust sources, rebuilds with wasm-pack, and triggers HMR inside the dev server | TypeScript |
+| [textil](https://github.com/Coxless/textil) | ASCII art creation and editing studio: web app, npm package and CLI | TypeScript |
+| [compatkit](https://github.com/Coxless/compatkit) | CLI for testing an npm package against a matrix of Next.js / React versions in a throwaway environment. Work in progress | TypeScript |
 
-<table align="center">
-<tr>
-<td width="50%" align="center" valign="top">
+### Development environment
 
-### 📱  **Mobile Development**
-<img src="https://skillicons.dev/icons?i=flutter,dart" />
+| Project | What it does |
+|---|---|
+| [setup-mise](https://github.com/Coxless/setup-mise) | Composite GitHub Action that sets up [mise](https://mise.jdx.dev/) on Ubuntu runners |
+| [home-manager](https://github.com/Coxless/home-manager) | My Nix Home Manager configuration |
+| [atcoder-starterkit-rust](https://github.com/Coxless/atcoder-starterkit-rust) | Starter kit for solving AtCoder problems in Rust |
 
-### ☁️  **Backend as a Service (BaaS)**
-<img src="https://skillicons.dev/icons?i=supabase,firebase" />
+## Tools I reach for
 
-### 🔧  **Development Tools**
-<img src="https://skillicons.dev/icons?i=vscode,git,github,postman" />
+**Languages:** Rust · TypeScript · Python · Lean 4 · Nix · Shell
 
-</td>
-<td width="50%" align="center" valign="top">
+**Around them:** Next.js · Vite · WebAssembly · PyO3 · OpenVINO · Ollama · mise · Podman · GitHub Actions
 
-### 🗄️  **Database**
-<img src="https://skillicons.dev/icons?i=postgresql,sqlite" />
+## Writing
 
-### 🎨  **Design**
-<img src="https://skillicons.dev/icons?i=figma,xd,photoshop" />
-
-### 💻  **Languages & Frameworks**
-<img src="https://skillicons.dev/icons?i=ruby,rails,js,ts,html,css" />
-
-</td>
-</tr>
-</table>
+I write technical articles in Japanese on Zenn. The sources live in [Coxless/zenn](https://github.com/Coxless/zenn).
